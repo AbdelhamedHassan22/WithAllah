@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/p1"
+        android:iconTint="#FFEBEE"
+        android:title="الادعية"/>
+
+
+    <item
+        android:id="@+id/nav_favourite"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="الازكار"/>
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/q1"
+        android:title="القران"/>
+    <item
+        android:id="@+id/nav_sebha"
+        android:icon="@drawable/beads_ss"
+        android:title="التسبيح" />
+    <item
+        android:id="@+id/Kaaba_nav"
+        android:icon="@drawable/kaaba_img"
+        android:title="القبلة" />
+
+
+</menu>
