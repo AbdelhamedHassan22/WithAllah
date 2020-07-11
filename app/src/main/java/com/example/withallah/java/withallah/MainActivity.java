@@ -1,18 +1,21 @@
-package com.example.withallah;
+package com.example.withallah.java.withallah;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import com.example.withallah.R;
+
+public class MainActivity extends AppCompatActivity implements OnClickListener {
+
     LinearLayout aa;
 private static  int page1 =1000;
+
 
 
     @Override
@@ -24,7 +27,7 @@ private static  int page1 =1000;
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run () {
-                Intent myintent=new Intent(MainActivity.this,HomePage.class);
+                Intent myintent=new Intent(MainActivity.this, HomePage.class);
                 startActivity(myintent);
 
 

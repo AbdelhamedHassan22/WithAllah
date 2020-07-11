@@ -3,13 +3,12 @@
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/p1"
-        android:iconTint="#FFEBEE"
         android:title="الادعية"/>
 
 
     <item
         android:id="@+id/nav_favourite"
-        android:icon="@drawable/ic_baseline_favorite_24"
+        android:icon="@drawable/sebha_nav"
         android:title="الازكار"/>
 
     <item

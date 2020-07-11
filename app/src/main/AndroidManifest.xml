@@ -11,20 +11,23 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-
+        android:name=".java.withallah.AppController"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TimePrayers">
+        <activity android:name=".java.withallah.TimePrayers">
         </activity>
+       <activity android:name=".java.withallah.quraan_source" >
 
-        <activity android:name=".MainActivity">
+       </activity>
+
+        <activity android:name=".java.withallah.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomePage">
+        <activity android:name=".java.withallah.HomePage">
 
         </activity>
     </application>

@@ -1,4 +1,4 @@
-package com.example.withallah;
+package com.example.withallah.java.withallah;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.example.withallah.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomePage extends AppCompatActivity {
@@ -41,7 +42,7 @@ public class HomePage extends AppCompatActivity {
 
 
                        case R.id.nav_search:
-                           selectedfragment =new QuranFragment();
+                           selectedfragment =new MainActivityy();
                            break;
 
                        case R.id.nav_sebha:
