@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/page2b">
 
     <ImageView
@@ -75,7 +75,7 @@
                 android:id="@+id/counter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="196dp"
+                android:layout_marginRight="198dp"
                 android:text="0"
                 android:textColor="#00805C"
                 android:textSize="60sp"
@@ -88,33 +88,13 @@
                 android:id="@+id/plus"
                 android:layout_width="215dp"
                 android:layout_height="227dp"
-                android:layout_marginEnd="124dp"
-                android:layout_marginRight="124dp"
+                android:layout_marginEnd="110dp"
+                android:layout_marginRight="110dp"
                 android:src="@drawable/plus_sebha"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/counter"
                 app:layout_constraintVertical_bias="0.563" />
-
-            <ImageView
-                android:id="@+id/reset"
-                android:layout_width="91dp"
-                android:layout_height="98dp"
-                android:layout_marginTop="407dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/plus_sebha" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="154dp"
-                android:layout_height="39dp"
-                android:text="عد الي الصفر"
-                android:textColor="#00805C"
-                android:textSize="26sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/reset" />
 
 
             <ImageView
@@ -139,9 +119,39 @@
                 app:layout_constraintEnd_toEndOf="@+id/plus"
                 app:srcCompat="@drawable/sahm2_seb" />
 
+            <com.getbase.floatingactionbutton.FloatingActionsMenu
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="420dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                app:fab_addButtonColorNormal="#00805C"
+                app:fab_labelStyle="@style/custom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="6dp"
+                    app:fabSize="mini"
+                    app:fab_colorNormal="#00805C"
+                    app:fab_icon="@drawable/ic_baseline_refresh_24"
+                  />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fabSize="mini"
+                    app:fab_colorNormal="#00805C"
+                    app:fab_icon="@drawable/ic_baseline_create_24"
+                     />
+
+
+            </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

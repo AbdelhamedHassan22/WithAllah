@@ -1,17 +1,28 @@
 package com.example.withallah.java.withallah;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.NavDestination;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
 
 import com.example.withallah.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 
 public class HomePage extends AppCompatActivity {
 
@@ -19,8 +30,6 @@ public class HomePage extends AppCompatActivity {
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_2);
-
-
         BottomNavigationView bottomNav =findViewById(R.id.botoom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navlistener);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new DoaaFragment()).commit();
@@ -59,30 +68,12 @@ public class HomePage extends AppCompatActivity {
             };
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        MenuInflater inflater= getMenuInflater();
-        inflater.inflate(R.menu.menu,menu);
-        return true;
-    }//end onCreateOptinmenu
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
-
-            case R.id.time_prayers:
-                Intent m = new Intent(HomePage.this, TimePrayers.class);
-                startActivity(m);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }//onCreateOptionsMenu
 
 
 
 
-    }//onOptionsItemSelected
-}//end class
+    }//class
+
+
 
 
