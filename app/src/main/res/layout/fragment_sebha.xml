@@ -40,6 +40,7 @@
         tools:layout_editor_absoluteX="52dp"
         tools:layout_editor_absoluteY="0dp">
 
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -72,17 +73,34 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="104dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.424" />
+
+            <TextView
                 android:id="@+id/counter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="198dp"
+                android:layout_marginRight="188dp"
                 android:text="0"
                 android:textColor="#00805C"
                 android:textSize="60sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.542" />
+                app:layout_constraintVertical_bias="0.543" />
 
             <ImageView
                 android:id="@+id/plus"
@@ -142,6 +160,7 @@
                 <com.getbase.floatingactionbutton.FloatingActionButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/addSelectedChoice"
                     app:fabSize="mini"
                     app:fab_colorNormal="#00805C"
                     app:fab_icon="@drawable/ic_baseline_create_24"

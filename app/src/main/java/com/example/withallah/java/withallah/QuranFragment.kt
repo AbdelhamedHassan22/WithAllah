@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.withallah.R
 import kotlinx.android.synthetic.main.fragment_quran.*
 
-class MainActivityy : Fragment() {
+class QuranFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val c = inflater . inflate (R.layout.fragment_quran, container, false)
 

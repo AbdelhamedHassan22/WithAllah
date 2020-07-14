@@ -10,7 +10,7 @@ import com.example.withallah.R
 
 import kotlinx.android.synthetic.main.design_swr.view.*
 
-class quraan_source_adapter(var userlist2:ArrayList<MainActivityy.data2>):RecyclerView.Adapter<quraan_source_adapter.veiwHold>() {
+class quraan_source_adapter(var userlist2:ArrayList<QuranFragment.data2>):RecyclerView.Adapter<quraan_source_adapter.veiwHold>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): veiwHold {
         val v= LayoutInflater.from(parent.context).inflate(R.layout.design_swr,parent,false)
@@ -22,13 +22,13 @@ class quraan_source_adapter(var userlist2:ArrayList<MainActivityy.data2>):Recycl
     }
 
     override fun onBindViewHolder(holder: veiwHold, position: Int) {
-        val data: MainActivityy.data2=userlist2[position]
+        val data: QuranFragment.data2=userlist2[position]
         holder.bind(data)
 
     }
 
     class veiwHold(itemveiw: View): RecyclerView.ViewHolder(itemveiw) {
-        fun bind(mydata: MainActivityy.data2){
+        fun bind(mydata: QuranFragment.data2){
             val txt_name=itemView.txt_name as TextView
             txt_name.text=mydata.soraName
             val txt_num=itemView.txt_num as TextView
