@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -62,9 +63,9 @@ public class sebhaFragment extends Fragment  {
           @Override
           public void onClick(View view) {
 
-              listitems=new String[]{"سُبْحَانَ ذِي الْجَبَرُوتِ وَالْمَلَكُوتِ وَالْكِبْرِيَاءِ وَالْعَظَمَةِ","  سُبْحَانَ اللَّهِ الْعَظِيمِ وَبِحَمْدِهِ","سُبْحَانَ الْمَلِكِ الْقُدُّوسِ","للهم صلي وسلم علي سيدنا محمد"};
+              listitems=new String[]{"سُبْحَانَ ذِي الْجَبَرُوتِ وَالْمَلَكُوتِ وَالْكِبْرِيَاءِ وَالْعَظَمَةِ","  سُبْحَانَ اللَّهِ الْعَظِيمِ وَبِحَمْدِهِ","سُبْحَانَ الْمَلِكِ الْقُدُّوسِ","اللهم لا إله لا انتا سبحانك اني كنت من الظالمين","للهم صلي وسلم علي سيدنا محمد","اللهم انك عفو تحب العفو فاعفو عنا","الله اكبر","لا إله إلا الله وحده لا شريك له له الملك وله الحمد يحي ويميت وهوا على كل شيئ قدير","الحمدلله","استغفر الله"};
               AlertDialog.Builder mBuilder =new AlertDialog.Builder(getActivity());
-              mBuilder.setTitle("choose an item");
+              mBuilder.setTitle("اختار");
               mBuilder.setSingleChoiceItems(listitems, -1, new DialogInterface.OnClickListener() {
                   @Override
                   public void onClick(DialogInterface dialogInterface, int i) {
@@ -72,7 +73,7 @@ public class sebhaFragment extends Fragment  {
                       dialogInterface.dismiss();
                   }
               });
-              mBuilder.setNeutralButton("cancel", new DialogInterface.OnClickListener() {
+              mBuilder.setNeutralButton("الغاء", new DialogInterface.OnClickListener() {
                   @Override
                   public void onClick(DialogInterface dialogInterface, int i) {
 
@@ -83,5 +84,17 @@ public class sebhaFragment extends Fragment  {
 
           }
       });
+
+      if(anInt==33){
+         Toast.makeText(getContext(),"اللهم تقبل",Toast.LENGTH_LONG).show();
+
+
+      }
+
+        if(anInt==100){
+            Toast.makeText(getContext(),"اللهم تقبل",Toast.LENGTH_LONG).show();
+
+
+        }
     }
 }//end class

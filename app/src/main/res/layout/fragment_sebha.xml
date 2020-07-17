@@ -7,6 +7,7 @@
     xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/page2b">
 
+
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
@@ -21,18 +22,6 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/page2b" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="434dp"
-        android:layout_height="236dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.148"
-        app:srcCompat="@drawable/page2bu" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
@@ -41,33 +30,20 @@
         tools:layout_editor_absoluteY="0dp">
 
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
-            android:layout_marginBottom="380dp"
-            android:text="سَبِّحِ اسْمَ رَبِّكَ الْأَعْلَى "
-            android:textColor="#88000000"
-            android:textSize="36sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/relativeLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="199dp"
-            tools:layout_editor_absoluteY="0dp">
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="58dp">
 
             <ImageView
+                android:id="@+id/imageView7"
                 android:layout_width="111dp"
                 android:layout_height="0dp"
-                android:layout_marginTop="220dp"
-                android:layout_marginEnd="284dp"
-                android:layout_marginRight="284dp"
+                android:layout_marginTop="208dp"
+                android:layout_marginEnd="272dp"
+                android:layout_marginRight="272dp"
                 android:src="@drawable/logo_seb"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -84,36 +60,35 @@
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.424" />
+                app:layout_constraintVertical_bias="0.441" />
+
 
             <TextView
                 android:id="@+id/counter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="188dp"
+                android:layout_marginTop="336dp"
+                android:layout_marginRight="196dp"
                 android:text="0"
                 android:textColor="#00805C"
                 android:textSize="60sp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.543" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/plus"
                 android:layout_width="215dp"
                 android:layout_height="227dp"
-                android:layout_marginEnd="110dp"
-                android:layout_marginRight="110dp"
+                android:layout_marginTop="444dp"
+                android:layout_marginEnd="112dp"
+                android:layout_marginRight="112dp"
                 android:src="@drawable/plus_sebha"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/counter"
-                app:layout_constraintVertical_bias="0.563" />
-
+                app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
             <ImageView
 
@@ -140,11 +115,10 @@
             <com.getbase.floatingactionbutton.FloatingActionsMenu
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="420dp"
+                android:layout_marginTop="390dp"
                 android:layout_marginEnd="4dp"
                 android:layout_marginRight="4dp"
                 app:fab_addButtonColorNormal="#00805C"
-                app:fab_labelStyle="@style/custom"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -154,20 +128,43 @@
                     android:layout_height="6dp"
                     app:fabSize="mini"
                     app:fab_colorNormal="#00805C"
-                    app:fab_icon="@drawable/ic_baseline_refresh_24"
-                  />
+                    app:fab_icon="@drawable/ic_baseline_refresh_24" />
 
                 <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/addSelectedChoice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/addSelectedChoice"
                     app:fabSize="mini"
                     app:fab_colorNormal="#00805C"
-                    app:fab_icon="@drawable/ic_baseline_create_24"
-                     />
+                    app:fab_icon="@drawable/ic_baseline_create_24" />
 
 
             </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="66dp"
+                android:layout_marginEnd="129dp"
+                android:layout_marginRight="129dp"
+                android:text="سَبِّحِ اسْمَ رَبِّكَ الْأَعْلَى "
+                android:textColor="#88000000"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/page2bu" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

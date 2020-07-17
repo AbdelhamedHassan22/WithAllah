@@ -14,7 +14,7 @@ import com.example.withallah.R;
 public class MainActivity extends AppCompatActivity implements OnClickListener {
 
     LinearLayout aa;
-private static  int page1 =1000;
+private static  int page1 =2000;
 
 
 
@@ -27,8 +27,8 @@ private static  int page1 =1000;
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run () {
-                Intent myintent=new Intent(MainActivity.this, HomePage.class);
-                startActivity(myintent);
+                Intent myintnt=new Intent(MainActivity.this, MainActivityIntro.class);
+                startActivity(myintnt);
 
 
             }//end run
@@ -41,7 +41,7 @@ private static  int page1 =1000;
 
          @Override
     public void onClick(View view) {
-        Intent myintent=new Intent(MainActivity.this,HomePage.class);
+        Intent myintent=new Intent(MainActivity.this,MainActivityIntro.class);
         startActivity(myintent);
 
     }//end onClick
